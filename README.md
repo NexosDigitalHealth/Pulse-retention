@@ -1,63 +1,62 @@
 # PULSE
 
-**PULSE** is a lightweight B2B application designed to help gyms monitor member attendance and identify early signs of dropout risk.
+**PULSE** é um aplicativo B2B leve para ajudar academias a acompanhar a frequência dos alunos e identificar **sinais precoces de risco de evasão**.
 
-The system focuses on **engagement and retention**, providing simple, explainable indicators that allow gym managers and instructors to act before members abandon their training routine.
-
----
-
-## 🎯 Purpose
-
-Gym member dropout is one of the main challenges faced by fitness centers.  
-PULSE addresses this problem by transforming **attendance data** into **actionable insights**.
-
-PULSE does **not** prescribe workouts, provide health diagnoses, or replace professional supervision.
+O foco é **engajamento e retenção**, oferecendo indicadores simples e explicáveis para que gestores e professores ajam antes que o aluno abandone a rotina.
 
 ---
 
-## 🚀 Key Features
+## 🎯 Objetivo
 
-- Weekly attendance tracking  
-- Detection of frequency decline  
-- Dropout risk score (0–100)  
-- Visual alerts for high-risk members  
-- Simple CSV-based data input  
-- Explainable and rule-based logic  
+A evasão de alunos é um dos principais desafios das academias.  
+A PULSE transforma **dados de presença** em **insights acionáveis**.
+
+A PULSE **não prescreve treino**, **não faz diagnóstico** e **não substitui** acompanhamento profissional.
 
 ---
 
-## 📊 How It Works
+## 🚀 Funcionalidades
 
-PULSE analyzes attendance patterns using simple, transparent rules:
-
-- Average weekly attendance  
-- Recent drop in frequency  
-- Consecutive absences  
-- Irregular attendance patterns  
-
-These factors are combined into a **Dropout Risk Score**, allowing gym staff to prioritize follow-up actions.
+- Acompanhamento de presença semanal  
+- Detecção de queda de frequência  
+- Score de risco de evasão (0–100)  
+- Alertas visuais para alunos em risco  
+- Entrada simples por arquivo CSV  
+- Lógica baseada em regras (explicável)
 
 ---
 
-## 🧠 Dropout Risk Score
+## 📊 Como funciona
 
-| Score Range | Interpretation |
-|------------|----------------|
-| 0–30       | Low risk       |
-| 31–60      | Moderate risk  |
-| 61–100     | High risk      |
+A PULSE analisa padrões de presença com regras transparentes:
 
-The score is designed to be **interpretable**, not predictive medicine.
+- Média de presenças por semana  
+- Queda recente na frequência  
+- Ausências consecutivas  
+- Irregularidade do padrão de presença  
+
+Esses fatores são combinados em um **Score de Risco de Evasão**, permitindo priorizar ações de retenção.
 
 ---
 
-## 📂 Data Input
+## 🧠 Score de Risco de Evasão
 
-PULSE currently accepts a CSV file with the following structure:
+| Faixa | Interpretação |
+|------:|---------------|
+| 0–30  | Baixo risco   |
+| 31–60 | Risco moderado|
+| 61–100| Alto risco    |
+
+O score é **interpretável** e voltado à **gestão de engajamento**, não a “previsão médica”.
+
+---
+
+## 📂 Entrada de dados
+
+No momento, a PULSE aceita um CSV no formato:
 
 ```csv
-member_id,date
+aluno_id,data
 001,2025-01-02
 001,2025-01-05
 002,2025-01-03
-
